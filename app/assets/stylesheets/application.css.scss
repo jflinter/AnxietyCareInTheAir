@@ -1,0 +1,53 @@
+/*
+ *= require_self 
+ *= require_tree .
+ */
+
+$iconSpritePath: asset-url('glyphicons-halflings.png', image);
+$iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
+$navbarText: white;	
+$navbarLinkColor: white;
+$navbarLinkColorHover: #08c;
+@import "bootstrap";
+
+body {
+  padding-top: 10px;
+  padding-bottom:20px;
+	background-image:image-url("sky_background.jpg")
+}
+
+.hero-unit {
+  padding-bottom:0px;
+  background-color:white;
+}
+
+.main-container {
+  @include border-radius(6px);
+  background-color: white;
+  padding-bottom:30px;
+}
+
+.infobox {
+  @include box-sizing(border-box);
+  padding:20px;
+}
+
+.infobox h2 {
+  text-align:center;
+}
+
+.marketing h1 {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.navbar, .navbar-fixed-top .container {
+  width: 150px;
+  position: fixed;
+  left: inherit;
+  right:0px;
+}
+.navbar .nav {
+  float: right;
+}
